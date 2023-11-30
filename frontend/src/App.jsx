@@ -1,9 +1,17 @@
+import React from "react";
+import Header from "./globals/Header";
+import { Outlet } from "react-router-dom";
+// import Footer from "./globals/Footer";
+// import HomePage from "./pages/HomePage";
+// import ContactPage from "./pages/ContactPage";
+
 function App() {
   return (
-    <div className="app">
-      {/* C'est ici qu'apparaîtront les composants enfants de App */}
-    </div>
-  )
+    <>
+      <Header />
+      <Outlet />
+    </>
+  );
 }
 
-export default App
+export default App;
